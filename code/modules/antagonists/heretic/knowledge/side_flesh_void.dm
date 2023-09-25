@@ -26,10 +26,11 @@
 		Also has a chance to transfer wounds from you to the victim."
 	gain_text = "\"No matter the man, we bleed all the same.\" That's what the Marshal told me."
 	next_knowledge = list(
+		/datum/heretic_knowledge/spell/apetra_vulnera,
 		/datum/heretic_knowledge/spell/void_phase,
 		/datum/heretic_knowledge/summon/raw_prophet,
 	)
-	spell_to_add = /obj/effect/proc_holder/spell/pointed/blood_siphon
+	spell_to_add = /datum/action/cooldown/spell/pointed/blood_siphon
 	cost = 1
 	route = PATH_SIDE
 
@@ -43,6 +44,6 @@
 		/datum/heretic_knowledge/summon/stalker,
 		/datum/heretic_knowledge/spell/void_pull,
 	)
-	spell_to_add = /obj/effect/proc_holder/spell/pointed/cleave
+	spell_to_add = /datum/action/cooldown/spell/pointed/cleave
 	cost = 1
 	route = PATH_SIDE
